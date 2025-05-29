@@ -42,6 +42,8 @@
       font-weight: bold;
       color: #111;
       font-size: 1.2em;
+      user-select: none;
+      pointer-events: none;
     }
 
     button {
@@ -99,8 +101,7 @@
     <div class="copied-msg" id="accountCopiedMsg">✔ Account number copied!</div>
 
     <div class="info">Mobile Number:<br><span class="value" id="mobileNumber">7327773</span></div>
-    <button onclick="copyText('mobileNumber', 'mobileCopiedMsg')">Copy Mobile Number</button>
-    <div class="copied-msg" id="mobileCopiedMsg">✔ Mobile number copied!</div>
+    <!-- Copy button removed for mobile number -->
 
     <a href="viber://chat?number=+9607327773">
       <button style="background-color: #665cac; margin-top: 10px;">Chat on Viber</button>
